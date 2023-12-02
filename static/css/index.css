@@ -149,3 +149,11 @@ body {
 .scaled-image {
   width: 75%;
 }
+
+.item-spacing {
+  margin-bottom: 60px; /* adjust as necessary */
+}
+
+.small-text {
+  font-size: 0.8em; /* adjust as necessary */
+}
