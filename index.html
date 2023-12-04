@@ -43,6 +43,23 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <!-- photoswipe -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+  <!-- Core CSS file -->
+  <style>
+    *{padding: 0;margin: 0;list-style: none;}
+    h1{padding: 20px 2%;font-size: 20px;padding-bottom: 0}
+    .lightgallery{border:1px solid #d9d9d9;padding: 10px 10px;margin: 5%;display: flex;justify-content: space-between;}
+    .lightgallery figure{ margin: 0 10px;}
+    .lightgallery figure img{max-width: 100%; }
+  </style>
+  <link rel="stylesheet" href="static/css/photoswipe.css">
+  <link rel="stylesheet" href="static/default-skin/default-skin.css">
+  <script src="http://apps.bdimg.com/libs/jquery/1.10.1/jquery.min.js"></script>
+  <!-- end photoswipe -->
+
 </head>
 <body>
 
@@ -259,20 +276,6 @@
         <div class="column is-13">
           
         <h2 class="title is-3">Results</h2>
-      
-          <div class="item item-spacing">
-            <!-- <h2 class="title is-5">
-              Compared to CLIPStyler <span class="small-text">[CVPR'22]</span>.
-            </h2> -->
-            <img class="centered-image" src="static/images/face2.png" alt="MY ALT TEXT"/>
-          </div>
-
-          <div class="item item-spacing">
-            <!-- <h2 class="title is-5">
-              Compared to CLIPStyler <span class="small-text">[CVPR'22]</span>.
-            </h2> -->
-            <img class="centered-image" src="static/images/taj_mahal.png" alt="MY ALT TEXT"/>
-          </div>
 
           <div class="item item-spacing">
             <h2 class="title is-5">
@@ -281,16 +284,23 @@
             <img class="centered-image" src="static/images/ClipStyler.png" alt="MY ALT TEXT"/>
           </div>
       
-          <div class="item">
+          <div class="item item-spacing">
             <h2 class="title is-5">
               Compared to ZeCon <span class="small-text">[ICCV'23]</span>.
             </h2>
             <img class="centered-image" src="static/images/ZeCon.png" alt="MY ALT TEXT"/>
+            <h2 class="content">
+              <br>The images used for comparison are all directly excerpted from the paper, therefore, the images have all been well-tuned.
+            </h2>
           </div>
 
-          <h2 class="content">
-            <br>The images used for comparison are all directly excerpted from the paper, therefore, the images have all been well-tuned.
-          </h2>
+          <div class="item item-spacing">
+            <img id="centered-image" src="static/images/face2.png" alt="MY ALT TEXT">
+          </div>
+
+          <div class="item">
+            <img class="centered-image" src="static/images/taj_mahal.png" alt="MY ALT TEXT"/>
+          </div>
 
         </div>
       </div>
@@ -299,6 +309,187 @@
 </section>
 <!-- End teaser video -->
 
+
+<h2 class="title is-5 has-text-centered">
+  Please click on the image to view more details.
+</h2>
+
+<div class="lightgallery" data-pswp-uid="1" id="PhotoSwipe-demo">
+  <figure>
+    <div>
+      <a href="static\images\face2\0.jpeg" data-size="512x512"><img src="static\images\face2\0.jpeg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\1.jpg" data-size="512x512"><img src="static\images\face2\1.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\2.jpg" data-size="512x512"><img src="static\images\face2\2.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\3.jpg" data-size="512x512"><img src="static\images\face2\3.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\4.jpg" data-size="512x512"><img src="static\images\face2\4.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\5.jpg" data-size="512x512"><img src="static\images\face2\5.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\6.jpg" data-size="512x512"><img src="static\images\face2\6.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\7.jpg" data-size="512x512"><img src="static\images\face2\7.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\8.jpg" data-size="512x512"><img src="static\images\face2\8.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\9.jpg" data-size="512x512"><img src="static\images\face2\9.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\10.jpg" data-size="512x512"><img src="static\images\face2\10.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\11.jpg" data-size="512x512"><img src="static\images\face2\11.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\12.jpg" data-size="512x512"><img src="static\images\face2\12.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\13.jpg" data-size="512x512"><img src="static\images\face2\13.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\14.jpg" data-size="512x512"><img src="static\images\face2\14.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\15.jpg" data-size="512x512"><img src="static\images\face2\15.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\face2\16.jpg" data-size="512x512"><img src="static\images\face2\16.jpg"></a>
+    </div>
+  </figure>
+</div>
+
+
+<div class="lightgallery" data-pswp-uid="2" id="PhotoSwipe-demo">
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\0.jpeg" data-size="512x512"><img src="static\images\taj_hamal\0.jpeg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\1.jpg" data-size="512x512"><img src="static\images\taj_hamal\1.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\2.jpg" data-size="512x512"><img src="static\images\taj_hamal\2.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\3.jpg" data-size="512x512"><img src="static\images\taj_hamal\3.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\4.jpg" data-size="512x512"><img src="static\images\taj_hamal\4.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\5.jpg" data-size="512x512"><img src="static\images\taj_hamal\5.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\6.jpg" data-size="512x512"><img src="static\images\taj_hamal\6.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\7.jpg" data-size="512x512"><img src="static\images\taj_hamal\7.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\8.jpg" data-size="512x512"><img src="static\images\taj_hamal\8.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\9.jpg" data-size="512x512"><img src="static\images\taj_hamal\9.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\10.jpg" data-size="512x512"><img src="static\images\taj_hamal\10.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\11.jpg" data-size="512x512"><img src="static\images\taj_hamal\11.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\12.jpg" data-size="512x512"><img src="static\images\taj_hamal\12.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\13.jpg" data-size="512x512"><img src="static\images\taj_hamal\13.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\14.jpg" data-size="512x512"><img src="static\images\taj_hamal\14.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\15.jpg" data-size="512x512"><img src="static\images\taj_hamal\15.jpg"></a>
+    </div>
+  </figure>
+  <figure>
+    <div>
+      <a href="static\images\taj_hamal\16.jpg" data-size="512x512"><img src="static\images\taj_hamal\16.jpg"></a>
+    </div>
+  </figure>
+</div>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -328,6 +519,17 @@
   </div>
 </footer>
 
+
+
+		<!-- 启动代码 -->
+		<script src="static/js/Photoswipe-html.js"></script>
+		<script src="static/js/photoswipe.min.js"></script>
+		<script src="static/js/photoswipe-ui-default.min.js"></script>
+		<script src="static/js/Photoswipe-demo.js"></script>
+		<script>
+			// 调用图片画廊		
+			initPhotoSwipeFromDOM('#PhotoSwipe-demo');		
+		</script>
 <!-- Statcounter tracking code -->
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
